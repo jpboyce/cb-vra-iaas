@@ -51,3 +51,11 @@ describe host('vraiaas.contoso.local') do
   it { should be_resolvable}
   its('ipaddress') { should include '12.34.56.78'}
 end
+
+# Logon As A Service check
+# http://inspec.io/docs/reference/resources/security_policy/
+describe security_policy do
+  its('SeServiceLogonRight') { should include 'iaasSID' }
+end
+
+# DTC Service check
