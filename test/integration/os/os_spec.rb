@@ -38,3 +38,16 @@ describe powershell(script) do
   # add a matcher to check versions
 end
 # Static IP Check
+
+
+# Disk check?
+describe filesystem('c:/') do
+  its('size') { should be >= 123 }
+end
+
+# FQDN Check
+# http://inspec.io/docs/reference/resources/host/
+describe host('vraiaas.contoso.local') do
+  it { should be_resolvable}
+  its('ipaddress') { should include '12.34.56.78'}
+end
