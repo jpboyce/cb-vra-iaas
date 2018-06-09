@@ -21,3 +21,11 @@ describe port(1433) do
   its('processes') { should include('mssqlserver') } # could this be tightened up to 'should be'?
   its('addresses') { should include '0.0.0.0' }
 end
+
+# Check MSSQL Permissions for user
+sql = mssql_session(user: 'user', password: 'password')
+# Not supplying a username and password will test Windows authentication
+query = "SELECT * FROM BLAH"
+describe sql.query(query).row(0).column('result') do
+  its('value') { should eq '' }
+end
