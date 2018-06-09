@@ -18,3 +18,6 @@ issues_url 'https://github.com/jpboyce/cb-vra-iaas/issues'
 # a Supermarket.
 #
 source_url 'https://github.com/jpboyce/cb-vra-iaas'
+
+# Added for java install
+depends 'java', '~> 2.1.0'
