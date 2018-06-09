@@ -12,6 +12,13 @@ describe package('Microsoft SQL Server') do
   its('version') { should be '1.2.3' }
 end
 
+# Service Check
+# http://inspec.io/docs/reference/resources/service/
+describe service('MSSQLServer') do
+  it { should be_installed }
+  it { should be_enabled }
+  it { should be_running }
+end
 
 # Check ports
 # http://inspec.io/docs/reference/resources/port/
