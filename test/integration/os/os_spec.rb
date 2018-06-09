@@ -59,3 +59,7 @@ describe security_policy do
 end
 
 # DTC Service check
+# http://inspec.io/docs/reference/resources/service/
+describe service('MSTDC') do
+  it { should be_enabled }
+end
