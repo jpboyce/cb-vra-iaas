@@ -58,6 +58,12 @@ describe security_policy do
   its('SeServiceLogonRight') { should include 'iaasSID' }
 end
 
+# Logon As A Batch Job check
+# http://inspec.io/docs/reference/resources/security_policy/
+describe security_policy do
+  its('SeBatchLogonRight') { should eq 'IIS App Pool SID' }
+end
+
 # DTC Service check
 # http://inspec.io/docs/reference/resources/service/
 describe service('MSTDC') do
