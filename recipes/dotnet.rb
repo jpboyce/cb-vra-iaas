@@ -6,6 +6,6 @@
 
 # Install .NET 4.5.2 if not present
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full
-Release
-394802
+# HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full
+# Release
+# 394802

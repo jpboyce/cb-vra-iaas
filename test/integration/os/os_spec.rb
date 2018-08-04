@@ -21,7 +21,6 @@ describe os[:release] do
   it { should eq '1.2.3' }
 end
 
-
 # Powershell
 # vRA 7.3 supports: 2.0, 4.0, 5.0 and 5.1
 # vRA 7.4 supports: 4.0, 5.0 and 5.1
@@ -39,7 +38,6 @@ describe powershell(script) do
 end
 # Static IP Check
 
-
 # Disk check?
 describe filesystem('c:/') do
   its('size') { should be >= 123 }
@@ -48,8 +46,8 @@ end
 # FQDN Check
 # http://inspec.io/docs/reference/resources/host/
 describe host('vraiaas.contoso.local') do
-  it { should be_resolvable}
-  its('ipaddress') { should include '12.34.56.78'}
+  it { should be_resolvable }
+  its('ipaddress') { should include '12.34.56.78' }
 end
 
 # Logon As A Service check

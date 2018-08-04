@@ -22,6 +22,6 @@ source_url 'https://github.com/jpboyce/cb_vra_iaas'
 supports 'windows'
 
 # Added for java install
-#depends 'java', '~> 2.1.0'
+# depends 'java', '~> 2.1.0'
 # Added for MSSQL install
-#depends 'sql_server', '~> 5.5.0'
+# depends 'sql_server', '~> 5.5.0'

@@ -11,7 +11,7 @@ control 'Java' do
   # http://inspec.io/docs/reference/resources/package/
   describe package('Java') do
     it { should be_installed }
-    its('version') { should eq '1.8'}
+    its('version') { should eq '1.8' }
   end
 
   # http://inspec.io/docs/reference/resources/os_env/

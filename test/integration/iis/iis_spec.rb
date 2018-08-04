@@ -8,8 +8,6 @@ describe windows_feature('feature_name') do
   it { should_not be_installed }
 end
 
-
-
 # Check ports
 # http://inspec.io/docs/reference/resources/port/
 describe port(80) do
