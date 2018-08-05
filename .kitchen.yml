@@ -13,7 +13,7 @@ verifier:
   name: inspec
 
 platforms:
-  - name: windows-2016
+  - name: windows2016
     os_type: windows
     transport:
       name: winrm
@@ -22,7 +22,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[cb-vra-iaas::default]
+      - recipe[cb_vra_iaas::default]
     verifier:
       inspec_tests:
         #- test/smoke/default
