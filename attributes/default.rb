@@ -11,6 +11,13 @@ default['cb_vra_iaas']['iaas_svc_account']['password'] = ''
 # IIS Features List
 default['cb_vra_iaas']['iis_features']['2016'] = %w[Web-Windows-Auth Web-Static-Content Web-Default-Doc Web-Asp-Net Web-Asp-Net45 Web-ISAPI-Ext Web-ISAPI-Filter WAS-Config-APIs WAS-NET-Environment WAS-Process-Model NET-WCF-HTTP-Activation45 NET-HTTP-Activation NET-Non-HTTP-Activ ]
 
+# Filebeat Installer attributes
+default['cb_vra_iaas']['filebeat']['name'] = 'Filebeat 6.3.2'
+default['cb_vra_iaas']['filebeat']['checksum'] = 'd5256b3d1a6da959ea98ea2a2be3a05a7df9d1a5cd75db3930f935ab71ce43b8'
+default['cb_vra_iaas']['filebeat']['version'] = '8.0.1710.11'
+default['cb_vra_iaas']['filebeat']['directory'] = 'C:\Program Files\ElasticStack\filebeat-6.3.2-windows-x86_64'
+default['cb_vra_iaas']['filebeat']['source'] = '\\nas01\vra\apps\elasticsearch\filebeat\filebeat-6.3.2-windows-x86_64.zip'
+
 # Temp Java Installer attributes
 default['cb_vra_iaas']['java']['name'] = 'Java 8 Update 171 (64-bit)'
 default['cb_vra_iaas']['java']['installer'] = 'jre-8u171-windows-x64.exe'
