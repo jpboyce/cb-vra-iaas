@@ -15,7 +15,7 @@ end
 package node['cb_vra_iaas']['java']['name'] do
   checksum node['cb_vra_iaas']['java']['checksum']
   installer_type :custom
-  options "INSTALL_SILENT=Enable REBOOT=Disable SPONSORS=Disable /L %TEMP%\\JavaInstall.log"
+  options 'INSTALL_SILENT=Enable REBOOT=Disable SPONSORS=Disable /L %TEMP%\\JavaInstall.log'
   source temp_installer
   version node['cb_vra_iaas']['java']['version']
   action :install

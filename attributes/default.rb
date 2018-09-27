@@ -9,7 +9,7 @@ default['cb_vra_iaas']['server_role']['sql'] = true
 default['cb_vra_iaas']['iaas_svc_account']['name'] = ''
 default['cb_vra_iaas']['iaas_svc_account']['password'] = ''
 # IIS Features List
-default['cb_vra_iaas']['iis_features']['2016'] = %w[Web-Windows-Auth Web-Static-Content Web-Default-Doc Web-Asp-Net Web-Asp-Net45 Web-ISAPI-Ext Web-ISAPI-Filter WAS-Config-APIs WAS-NET-Environment WAS-Process-Model NET-WCF-HTTP-Activation45 NET-HTTP-Activation NET-Non-HTTP-Activ ]
+default['cb_vra_iaas']['iis_features']['2016'] = %w(Web-Windows-Auth Web-Static-Content Web-Default-Doc Web-Asp-Net Web-Asp-Net45 Web-ISAPI-Ext Web-ISAPI-Filter WAS-Config-APIs WAS-NET-Environment WAS-Process-Model NET-WCF-HTTP-Activation45 NET-HTTP-Activation NET-Non-HTTP-Activ )
 
 # Filebeat Installer attributes
 default['cb_vra_iaas']['filebeat']['name'] = 'filebeat-6.3.2-windows-x86_64.zip'

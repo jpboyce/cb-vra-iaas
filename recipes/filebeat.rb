@@ -4,7 +4,6 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-
 # Get zip file from source location
 remote_file ::File.join(Chef::Config[:file_cache_path], (node['cb_vra_iaas']['filebeat']['name'])) do
   source node['cb_vra_iaas']['filebeat']['source']
@@ -31,7 +30,6 @@ template "#{node['cb_vra_iaas']['filebeat']['directory']}/filebeat.yml" do
   source 'filebeat.yml.erb'
   action :create
 end
-
 
 # Install the service
 # powershell_script 'Install FileBeat Service' do
