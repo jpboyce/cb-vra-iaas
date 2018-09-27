@@ -1,3 +1,8 @@
+environment:
+  machine_user: vagrant
+  machine_pass: vagrant
+  KITCHEN_YAML: kitchen.appveyor.yml
+
 # Set branch to master only
 branches:
   only:
