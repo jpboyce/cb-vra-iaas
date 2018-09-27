@@ -20,7 +20,7 @@ issues_url 'https://github.com/jpboyce/cb_vra_iaas/issues'
 source_url 'https://github.com/jpboyce/cb_vra_iaas'
 
 supports 'windows'
-
+depends 'windows'
 # Added for java install
 # depends 'java', '~> 2.1.0'
 # Added for MSSQL install
