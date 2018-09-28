@@ -55,7 +55,7 @@ setup.template.settings:
 
 # The name of the shipper that publishes the network data. It can be used to group
 # all the transactions sent by a single shipper in the web interface.
-name: '<%= node[:fqdn] %>'
+name: '<%= @node_fqdn %>'
 
 # The tags of the shipper are included in their own field with each
 # transaction published.
@@ -89,7 +89,7 @@ setup.kibana:
   # Scheme and port can be left out and will be set to the default (http and 5601)
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
-  host: "<%= node['cb_vra_iaas']['filebeat']['kibana_host'] %>:<%= node['cb_vra_iaas']['filebeat']['kibana_port'] %>"
+  host: "<%= @kibana_host %>:<%= @kibana_port %>"
 
 #================================ Outputs =====================================
 
@@ -108,4 +108,4 @@ setup.kibana:
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["<%= node['cb_vra_iaas']['filebeat']['logstash_host'] %>:<%= node['cb_vra_iaas']['filebeat']['logstash_port'] %>"]
+  hosts: ["<%= @logstash_host %>:<%= @logstash_port %>"]

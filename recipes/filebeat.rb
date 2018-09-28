@@ -28,6 +28,13 @@ end
 # Copy over template file
 template "#{node['cb_vra_iaas']['filebeat']['directory']}/filebeat.yml" do
   source 'filebeat.yml.erb'
+  variables(
+    kibana_host: node['cb_vra_iaas']['filebeat']['kibana_host'],
+    kibana_port: node['cb_vra_iaas']['filebeat']['kibana_port'],
+    logstash_host: node['cb_vra_iaas']['filebeat']['logstash_host'],
+    logstash_port: node['cb_vra_iaas']['filebeat']['logstash_port'],
+    node_fqdn: node[:fqdn]
+  )
   action :create
 end
 
