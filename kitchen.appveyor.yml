@@ -18,7 +18,7 @@ provisioner:
   channel: current
 
 platforms:
-  - name: windows-2012R2
+  - name: windows-2016
 
 suites:
   - name: iis
