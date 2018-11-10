@@ -28,6 +28,13 @@ default['cb_vra_iaas']['java']['checksum'] = '605d05442c1640530a8ca2938baafb7855
 default['cb_vra_iaas']['java']['version'] = '8.0.1910.12'
 default['cb_vra_iaas']['java']['source'] = 'jre-8u191-windows-x64.exe.zip'
 
+# .NET 4.5.2 Installer
+default['cb_vra_iaas']['dotnet']['name'] = 'Microsoft .NET Framework 4.5.2'
+default['cb_vra_iaas']['dotnet']['installer'] = 'NDP452-KB2901907-x86-x64-AllOS-ENU.exe'
+default['cb_vra_iaas']['dotnet']['checksum'] = '6c2c589132e830a185c5f40f82042bee3022e721a216680bd9b3995ba86f3781'
+default['cb_vra_iaas']['dotnet']['version'] = '4.5.51650'
+default['cb_vra_iaas']['dotnet']['source'] = 'https://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe'
+
 # SQL Installer
 # default['cb_vra_iaas']['sql2012']['name'] = ''
 default['cb_vra_iaas']['sql2012']['installer'] = 'C:/temp/SQLFULL_ENU/setup.exe'
