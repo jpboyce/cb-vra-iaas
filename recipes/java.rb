@@ -8,7 +8,7 @@
 temp_installer = Chef::Config[:file_cache_path] + '\\' + node['cb_vra_iaas']['java']['installer']
 cookbook_file temp_installer do
   source node['cb_vra_iaas']['java']['source']
-  action :create
+  action :create_if_missing
 end
 
 # Run installer
@@ -23,5 +23,5 @@ end
 
 # Set environment variable
 windows_env 'JAVA_HOME' do
-  value 'C:\Program Files\Java\jre1.8.0_171'
+  value 'C:\Program Files\Java\jre1.8.0_191'
 end
