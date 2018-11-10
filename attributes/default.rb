@@ -22,11 +22,11 @@ default['cb_vra_iaas']['filebeat']['logstash_host'] = '192.168.1.104'
 default['cb_vra_iaas']['filebeat']['logstash_port'] = '5022'
 
 # Temp Java Installer attributes
-default['cb_vra_iaas']['java']['name'] = 'Java 8 Update 171 (64-bit)'
-default['cb_vra_iaas']['java']['installer'] = 'jre-8u171-windows-x64.exe'
-default['cb_vra_iaas']['java']['checksum'] = 'd5256b3d1a6da959ea98ea2a2be3a05a7df9d1a5cd75db3930f935ab71ce43b8'
-default['cb_vra_iaas']['java']['version'] = '8.0.1710.11'
-default['cb_vra_iaas']['java']['source'] = 'jre-8u171-windows-x64.exe.zip'
+default['cb_vra_iaas']['java']['name'] = 'Java 8 Update 191 (64-bit)'
+default['cb_vra_iaas']['java']['installer'] = 'jre-8u191-windows-x64.exe'
+default['cb_vra_iaas']['java']['checksum'] = '605d05442c1640530a8ca2938baafb785560aefa88dc8cd0b43261ef3ecfa4bd'
+default['cb_vra_iaas']['java']['version'] = '8.0.1910.12'
+default['cb_vra_iaas']['java']['source'] = 'jre-8u191-windows-x64.exe.zip'
 
 # SQL Installer
 # default['cb_vra_iaas']['sql2012']['name'] = ''
