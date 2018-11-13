@@ -23,3 +23,12 @@ powershell_script 'DisableAnonymousAuthentication' do
   guard_interpreter :powershell_script
   only_if '(Get-WebConfigurationProperty -filter /system.webServer/security/authentication/anonymousAuthentication -name enabled -PSPath "IIS:\" ).Value'
 end
+
+# Enable Windows Authentication
+powershell_script 'EnableWindowsAuthentication' do
+  code <<-EOH
+  Set-WebConfigurationProperty -Filter /system.webServer/security/authentication/windowsAuthentication -Name enabled -Value $true  -PSPath 'IIS:\'
+  EOH
+  guard_interpreter :powershell_script
+  not_if '(Get-WebConfigurationProperty -filter /system.webServer/security/authentication/windowsAuthentication -name enabled -PSPath "IIS:\" ).Value'
+end
