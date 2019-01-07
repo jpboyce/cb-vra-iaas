@@ -18,6 +18,11 @@ platforms:
     transport:
       name: winrm
       elevated: true
+  - name: windows2012r2-base
+    os_type: windows
+    transport:
+      name: winrm
+      elevated: true
 
 suites:
   - name: default
